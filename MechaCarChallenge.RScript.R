@@ -1,7 +1,7 @@
 library(dplyr)
 
-# Import the Mecha_Car mpg data.
-mechacar_mpg <- read.csv("MechaCar_mpg.csv")
+# Import the MechaCar mpg data.
+mechacar_mpg <- read.csv("Datasets/MechaCar_mpg.csv")
 
 # Generate the linear regression model.
 mpg_model <- lm(mpg ~ vehicle_length + vehicle_weight +
@@ -30,7 +30,7 @@ ggplot(mechacar_mpg, aes(AWD, mpg)) +
   geom_boxplot(aes(group = cut_width(AWD, 1))) + geom_point()
 
 # Import the Suspension Coil data.
-coil_data <- read.csv("Suspension_Coil.csv")
+coil_data <- read.csv("Datasets/Suspension_Coil.csv")
 
 # Get the total summary of all the coils.
 total_summary <- coil_data %>%
