@@ -3,7 +3,8 @@ library(dplyr)
 # Import the MechaCar mpg data.
 mechacar_mpg <- read.csv("Datasets/MechaCar_mpg.csv")
 
-# Generate the linear regression model.
+
+# Generate the multiple linear regression model.
 mpg_model <- lm(mpg ~ vehicle_length + vehicle_weight +
                   spoiler_angle + ground_clearance + AWD, mechacar_mpg)
 
@@ -12,6 +13,19 @@ mpg_summ <- summary(mpg_model)
 
 # Display the summary.
 mpg_summ
+
+
+# VIF test.
+library(car)
+vif(mpg_model)
+
+# Normality assumption.
+par(mfrow=c(2,2))
+plot(mpg_model)
+
+# Shapiro - Wilk Normality Test.
+shapiro.test(mpg_model$residuals)
+
 
 # Show the correlations.
 cor(mechacar_mpg$vehicle_length, mechacar_mpg$mpg)
@@ -28,6 +42,7 @@ ggplot(mechacar_mpg, aes(spoiler_angle, mpg)) + geom_point()
 ggplot(mechacar_mpg, aes(ground_clearance, mpg)) + geom_point()
 ggplot(mechacar_mpg, aes(AWD, mpg)) +
   geom_boxplot(aes(group = cut_width(AWD, 1))) + geom_point()
+
 
 # Import the Suspension Coil data.
 coil_data <- read.csv("Datasets/Suspension_Coil.csv")
