@@ -23,50 +23,83 @@ As can be seen, the variance inflation factor (vif) value is very close to 1. Wh
 Linear regression is a data analysis technique that estimates the value of unknown data using another relevant and known data value. It mathematically models the unknown or dependent variable and the known or independent variable as a linear equation.
 The easiest way to predict the fuel efficiency of MechaCar is with the linear regression model. The linear regression model is the most accurate method to explain the effect of each variable on fuel efficiency.
 
+
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210939180-be0fb502-03e0-4ccf-90d1-fa4edb3ef365.png">
 The graph above shows the normal distribution graphs of the dependent variable from the assumptions of normality. It can be said that the graphs above show a normal distribution in general.
+
 
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210939241-fc0704c9-3fea-4d90-aaa8-0f3f06ef79c6.png">
 Another hypothetical check is the regular Q-Q chart. These above tables show us whether the residues are normally distributed or not. Looking at the normal Q-Q graph; It shows us that residuals 4, 27 and 33 can be removed from the data set.
 
+
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210939300-cc26c807-0373-42ff-86ec-3a67f169f52a.png">
 When we look here, we can say that it is normally distributed, but testing for normality will give the best results.
-Before testing normality, let's create our hypotheses:
+
 Ho : Observations are normally distributed.
+
 H1: Observations are not normally distributed.
+
 Since p-value = 0.7965 and this value is greater than 0.05, our Ho hypothesis cannot be rejected, that is, we can say with 0.95 confidence that our observations are normally distributed. It is not possible to say that the observations are normally distributed according to the Cramer-von Mises test alone. In general, it is possible to say that the data are normally distributed for all tests.
 
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210939479-2d9bf776-256a-4ae6-895f-2bded62b3eff.png">
 H0: The variances for our observation are homogeneous.
+
 H1: The variances for our observation are not homogeneous.
+
 Since p= 0.1116988 > 0.05, we cannot reject our Ho hypothesis (in other words, Ho acceptance) since our p value is higher than the significance level, so we can say that the variances for our observation are homogeneous.
 
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210939547-dbd3fdfd-6081-4f56-a9b6-87bf85eb32e7.png">
 Significance Test of the Model:
+
 H0 : β1 = β2 = β3
+
 H1 : At least one βj is nonzero.
+
 Since p = 5.35e-11< α=0.05, H0 is red. It can be said that the established regression model is significant at the 95% confidence level. At least one independent variable explains the dependent variable. We can say that a linear relationship can be established between the independent and dependent variables.
+
 Model:
 mpg = -1.040e+02 + 6.267e+00*vehicle_length + 1.245e-03*vehicle_weight + 6.877e-02*spoiler_angle + 3.546e+00*ground_clearance - 3.411e+00*AWD
 
 Interpretations of the Coefficients:
 H0 : β0 (Contribution of the constant term to the model is not significant.)
+
 H1 : β0 (Contribution of the constant term to the model is significant.)
+
 Since the p-value is 5.08e-08 < 0.05, our H0 hypothesis is rejected, so the contribution of the constant term to the model is significant.
+
+
 H0 : β1 (The contribution of the vehicle_length variable to the model is not significant.)
+
 H1 : β1 (The contribution of the vehicle_length variable to the model is significant.)
+
 Since p -value=2.60e-12 <0.05, our H0 hypothesis is rejected, so the contribution of the constant term to the model is significant.
+
+
 H0 : β2 (The contribution of the vehicle_weight variable to the model is not significant.)
+
 H1 : β2 (The contribution of the vehicle_weight variable to the model is significant.)
+
 Since p – value value=0.0766 > 0.05, Ho hypothesis is accepted and the contribution of the variable to the model is not significant.
+
+
 H0 : β3 (The contribution of spoiler_angle variable to the model is not significant.)
+
 H1 : β3 (The contribution of spoiler_angle variable to the model is significant.)
+
 Since p-value = 0.3069 > 0.05, Ho hypothesis is accepted and the contribution of the variable to the model is not significant.
+
+
 H0 : β4 (The contribution of the ground_clearance variable to the model is not significant.)
+
 H1 : β4 (The contribution of the ground_clearance variable to the model is significant.)
+
 Since p-value=5.21e-08 <0.05, our H0 hypothesis is rejected, so the contribution of the constant term to the model is significant.
+
+
 H0 : β5 (The contribution of the AWD variable to the model is not significant.)
+
 H1 : β5 (The contribution of the AWD variable to the model is significant.)
+
 Since p-value = 0.1852 > 0.05, Ho hypothesis is accepted and the contribution of the variable to the model is not significant.
 
 #### Analysis 3. Distribution of Residuals
@@ -131,6 +164,7 @@ Parametric tests assume that the data has a normal distribution.
 The overall mean of the PSIs should be 1497<mean(PSI)<1500.053. The mean of x is 1498.78, so it falls between the confidence interval.
 
 H0: Average is equal to 1500.
+
 H1: Average is not equal to 1500.
 
 If p = 0.06028 > 0.05, statistically H0 is accepted at 95% confidence interval. So the average is not equal to 1500.
@@ -140,6 +174,7 @@ If p = 0.06028 > 0.05, statistically H0 is accepted at 95% confidence interval. 
 The overall mean of Lot1 should be 1499.719<mean(lot1)<1500.281. The mean of x is 1500, so it falls between the confidence interval.
 
 H0: Average is equal to 1500.
+
 H1: Average is not equal to 1500.
 
 If p = 1 > 0.05, statistically H0 is accepted at 95% confidence interval. So the average is equal to 1500.
@@ -149,6 +184,7 @@ If p = 1 > 0.05, statistically H0 is accepted at 95% confidence interval. So the
 The overall mean of lot2 should be 1499.423<mean(lot2)<1500.977. The mean of x is 1500.2, so it falls between the confidence interval.
 
 H0: Average is equal to 1500.
+
 H1: Average is not equal to 1500.
 
 If p = 0.6072 > 0.05, statistically H0 is accepted at 95% confidence interval. So the average is equal to 1500. 
@@ -158,24 +194,24 @@ If p = 0.6072 > 0.05, statistically H0 is accepted at 95% confidence interval. S
 The overall mean of lot3 should be 1492.431<mean(lot3)<1499.849. The mean of x is 1498.78, so it falls between the confidence interval.
 
 H0: Average is equal to 1500.
+
 H1: Average is not equal to 1500.
 
 If p = 0.04168 > 0.05, statistically H1 is accepted at 95% confidence interval. So the average is not equal to 1500.
 
 #### Analysis 12. Lot1-Lot2 Paired t-test
-<img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927607-e03ddf2f-2443-4815-b26b-487363ab0505.png">
+<img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210941599-57c9fdf9-ece2-426c-9efc-c5da4b0c9c1f.png">
 
-#### Analysis 12. Lot1-Lot2 Paired t-test
 Paired t-test is a technique used to test the significance of the difference between the arithmetic means of two related groups, provided that n>30 or the normality of the distribution.
 
-<img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927761-87e79738-4fae-4b77-a6aa-fa91ab274e1b.png">
 H0: There is no statistically significant difference between the means of lot1 and lot2.
 H1: There is a statistically significant difference between the means of lot1 and lot2.
 
 Since p = 0.6052 > 0.05, Ho is accepted. That is, there is no statistically significant difference between the averages of lot1 and lot2 at the 95% confidence interval. The confidence interval value is -0.9724591 < mean difference< 0.05724591. Mean difference = -0.2 and stays in confidence interval.
 
 #### Analysis 13. Lot1-Lot3 Paired t-test
-<img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927829-fbbf04a2-cdc3-47a8-8ddb-7f7037d4443c.png">
+<img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210941687-d53fa84c-169b-416d-895d-aab82dda3a11.png">
+
 H0: There is no statistically significant difference between the means of lot1 and lot3.
 H1: There is a statistically significant difference between the means of lot1 and lot3.
 
@@ -183,6 +219,7 @@ Since p = 0.04347 < 0.05, H1 is accepted. That is, there is a statistically sign
 
 #### Analysis 14. Lot2-Lot3 Paired t-test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927926-e992b287-9442-4240-a341-48f64dc80133.png">
+
 H0: There is no statistically significant difference between the means of lot2 and lot3.
 H1: There is a statistically significant difference between the means of lot2 and lot3.
 
@@ -191,21 +228,24 @@ Since p = 0.04199 < 0.05, H1 is accepted. That is, there is a statistically sign
 ### Analysis 15. Levene Test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210940008-402ffab1-0306-420a-a87b-15805d498115.png">
 Another requirement of ANOVA is Homogeneity of Variances. We can test this with the Bartlett Test. In both tests, we need to set up our null (zero) hypothesis as the variances for the observations are homogeneous.
-Let's set up our hypothesis:
+
 H0: The variances for our observation are homogeneous.
+
 H1: The variances for our observation are not homogeneous.
 p = 2.895e-07 < 0.05, H1 is accepted, so the variances are not homogeneous.
 It is necessary to find out which group constitutes the variance difference between the groups.
 
-#### Analysis 15. One Way ANOVA Test
+#### Analysis 16. One Way ANOVA Test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927972-94917f71-b847-43af-86c3-18be07a9f642.png">
 This test is applied if there are at least three independent samples or groups.
+
 H0: µlot1 = µlot2 = µlot3
+
 H1: At least one μ value is different.
 
 Since the F statistical value is 17.94 and the significance level of the corresponding p value is p = 0.014 < 0.05, the average PSI values of each lot are not equal to each other. So at least one is different. Tukey test is applied to find out which one is different.
 
-#### Analysis 16. Tukey Test
+#### Analysis 17. Tukey Test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210928025-ee0755e8-7a15-442b-b34a-6437a6816e0e.png">
 Confidence value for Tukey HSD is 0.05. As a result of the above analysis, the "diff" column provides average differences. The "lwr" and "upr" columns provide lower and upper 95% security limits, respectively. Finally, the “p adj” column provides the adjusted p-values for the number of comparisons made. It turns out that this difference is due to lot3.
 
