@@ -124,6 +124,7 @@ If p = 0.04168 > 0.05, statistically H1 is accepted at 95% confidence interval. 
 
 #### Analysis 12. Lot1-Lot2 Paired t-test
 Paired t-test is a technique used to test the significance of the difference between the arithmetic means of two related groups, provided that n>30 or the normality of the distribution.
+
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927761-87e79738-4fae-4b77-a6aa-fa91ab274e1b.png">
 H0: There is no statistically significant difference between the means of lot1 and lot2.
 H1: There is a statistically significant difference between the means of lot1 and lot2.
