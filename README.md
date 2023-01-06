@@ -32,7 +32,8 @@ The graph above shows the normal distribution graphs of the dependent variable f
 Another hypothetical check is the regular Q-Q chart. These above tables show us whether the residues are normally distributed or not. Looking at the normal Q-Q graph; It shows us that residuals 4, 27 and 33 can be removed from the data set.
 
 
-<img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210939300-cc26c807-0373-42ff-86ec-3a67f169f52a.png">
+<img width="478" alt="Screen Shot 2023-01-06 at 12 50 10 AM" src="https://user-images.githubusercontent.com/26927158/210946429-9e673554-1df8-4d34-90a9-0cc483aa9b0d.png">
+
 When we look here, we can say that it is normally distributed, but testing for normality will give the best results.
 
 Ho : Observations are normally distributed.
