@@ -161,7 +161,7 @@ Considering the distributions of lot1, lot2 and lot3 observation values, while l
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210928719-425db3ad-a085-4954-9ebb-6ed3b57fbf03.png">
 Parametric tests assume that the data has a normal distribution.
 
-The overall mean of the PSIs should be 1497<mean(PSI)<1500.053. The mean of x is 1498.78, so it falls between the confidence interval.
+The overall mean of the PSI should be 1497<mean(PSI)<1500.053. The mean of x is 1498.78, so it falls between the confidence interval.
 
 H0: Average is equal to 1500.
 
@@ -171,8 +171,8 @@ If p = 0.06028 > 0.05, statistically H0 is accepted at 95% confidence interval. 
 
 #### Analysis 10. Lot1 t-test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927379-e1ef391e-6448-47ca-ba1e-6de7f1b79575.png">
-The overall mean of Lot1 should be 1499.719<mean(lot1)<1500.281. The mean of x is 1500, so it falls between the confidence interval.
 
+The overall mean of Lot1 should be 1499.719<mean(lot1)<1500.281. The mean of x is 1500, so it falls between the confidence interval.
 
 H0: Average is equal to 1500.
 
@@ -182,8 +182,8 @@ If p = 1 > 0.05, statistically H0 is accepted at 95% confidence interval. So the
 
 #### Analysis 11. Lot2 t-test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927432-b1d9f89c-0ce7-4998-8ac4-3afdef2c6c18.png">
-The overall mean of lot2 should be 1499.423<mean(lot2)<1500.977. The mean of x is 1500.2, so it falls between the confidence interval.
 
+The overall mean of lot2 should be 1499.423<mean(lot2)<1500.977. The mean of x is 1500.2, so it falls between the confidence interval.
 
 H0: Average is equal to 1500.
 
@@ -193,8 +193,8 @@ If p = 0.6072 > 0.05, statistically H0 is accepted at 95% confidence interval. S
 
 #### Analysis 12. Lot3 t-test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927549-5cb7eaba-1866-48ce-bb92-80e3519fc522.png">
-The overall mean of lot3 should be 1492.431<mean(lot3)<1499.849. The mean of x is 1498.78, so it falls between the confidence interval.
 
+The overall mean of lot3 should be 1492.431<mean(lot3)<1499.849. The mean of x is 1498.78, so it falls between the confidence interval.
 
 H0: Average is equal to 1500.
 
