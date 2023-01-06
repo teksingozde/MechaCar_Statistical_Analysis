@@ -145,7 +145,7 @@ If a general comment is to be made, different types of assumption tests should b
 ### Analysis of Suspension Coil
 #### Analysis 6. Total Summary PSI
 <img width="363" alt="image" src="https://user-images.githubusercontent.com/26927158/210928611-27dd32f2-8400-4dcc-b07a-cd2ce01b0649.png">
-PSI is the name given to the air pressure values in tires. In general, the average of the PSI values in our data set is 1498.78, the median value is 1500, the variance value shows how different our observation values can be from the average, and the variance value is 62.29. The standard deviation value is 7.89, and the smaller the standard deviation value, the closer the data are to the mean. In this dataset, the data are very close to the mean. The fact that the arithmetic mean is smaller than the median indicates that the frequency curve is left skewness, even at the minimum level, but this skewness is close to the symmetrical distribution, because there is not much difference between the median and the mean.
+In general, the average of the PSI values in our data set is 1498.78, the median value is 1500, the variance value shows how different our observation values can be from the average, and the variance value is 62.29. The standard deviation value is 7.89, and the smaller the standard deviation value, the closer the data are to the mean. In this dataset, the data are very close to the mean. The fact that the arithmetic mean is smaller than the median indicates that the frequency curve is left skewness, even at the minimum level, but this skewness is close to the symmetrical distribution, because there is not much difference between the median and the mean.
 
 #### Analysis 7. Lot1 - Lot2- Lot3 Summary
 <img width="492" alt="image" src="https://user-images.githubusercontent.com/26927158/210928639-3e33e44d-d7e5-446a-a9c7-0fe9ad2cf359.png">
@@ -256,3 +256,12 @@ The results show that there is a statistically significant difference compared t
 
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210928087-24602ece-45bf-4617-82fc-7f9b90e4034a.png">
 The Tukey test plot gives us information about the lot that made the difference. As can be seen, the difference is largely due to the lot3 group.
+
+## Summary
+MechaCar needs to have a better segment in order to be compared with existing vehicles. MechaCar should be compared with many other vehicles regardless of its type, and it would be much more accurate to decide on fuel cost savings in that way.
+
+Some criteria have been determined for the test and these criteria are; includes purchase cost, fuel efficiency, maintenance cost and safety rating. For the purposes of this study, the degree of security was chosen as an example. It is necessary to prioritize the design reliability of MechaCar. It should be shown what level MechaCar is compared to many other competing vehicles.
+
+As a result of the general analysis, it has been clearly determined that MechaCar has an average level of security and is as reliable as the competitor.
+
+It has been proven to be reliable in line with the t values that emerge between MechaCar safety ratings and competitor safety values. This means that as a result of the researches, the average security level of MechaCar is stronger than its rival.
