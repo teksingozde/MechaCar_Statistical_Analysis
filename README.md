@@ -51,7 +51,7 @@ Since p= 0.1116988 > 0.05, we cannot reject our Ho hypothesis (in other words, H
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210939547-dbd3fdfd-6081-4f56-a9b6-87bf85eb32e7.png">
 Significance Test of the Model:
 
-H0 : β1 = β2 = β3
+H0 : β1 = β2 = β3 = β4 = β5
 
 H1 : At least one βj is nonzero.
 
