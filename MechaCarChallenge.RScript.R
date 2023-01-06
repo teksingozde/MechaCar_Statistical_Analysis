@@ -8,6 +8,16 @@ mechacar_mpg <- read.csv("Datasets/MechaCar_mpg.csv")
 mpg_model <- lm(mpg ~ vehicle_length + vehicle_weight +
                   spoiler_angle + ground_clearance + AWD, mechacar_mpg)
 
+# Spread of dependent variable.
+library(olsrr)
+ols_plot_response(mpg_model)
+
+# Normality test.
+ols_test_normality(mpg_model)
+
+# Variance homogeneity test.
+ols_test_breusch_pagan(mpg_model)
+
 # Summarize the model.
 mpg_summ <- summary(mpg_model)
 
@@ -104,10 +114,18 @@ coil_filt <- coil_data[, c("Manufacturing_Lot", "PSI")]
 # Conduct the One-Way ANOVA test.
 coilvar <- aov(PSI ~ Manufacturing_Lot, data = coil_filt)
 
+
+# Variance homogeneity test.
+leveneTest(coilvar)
+
 # Present the results.
 summary(coilvar)
 
+# Tukey test.
+TukeyHSD(coilvar, conf.level = 0.95)
 
+# Tukey test plot.
+plot(TukeyHSD(coilvar,conf.level = 0.95),las=1, col="red")
 
 
 
