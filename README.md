@@ -173,6 +173,7 @@ If p = 0.06028 > 0.05, statistically H0 is accepted at 95% confidence interval. 
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927379-e1ef391e-6448-47ca-ba1e-6de7f1b79575.png">
 The overall mean of Lot1 should be 1499.719<mean(lot1)<1500.281. The mean of x is 1500, so it falls between the confidence interval.
 
+
 H0: Average is equal to 1500.
 
 H1: Average is not equal to 1500.
@@ -183,15 +184,17 @@ If p = 1 > 0.05, statistically H0 is accepted at 95% confidence interval. So the
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927432-b1d9f89c-0ce7-4998-8ac4-3afdef2c6c18.png">
 The overall mean of lot2 should be 1499.423<mean(lot2)<1500.977. The mean of x is 1500.2, so it falls between the confidence interval.
 
+
 H0: Average is equal to 1500.
 
 H1: Average is not equal to 1500.
 
 If p = 0.6072 > 0.05, statistically H0 is accepted at 95% confidence interval. So the average is equal to 1500. 
 
-#### Analysis 11. Lot3 t-test
+#### Analysis 12. Lot3 t-test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927549-5cb7eaba-1866-48ce-bb92-80e3519fc522.png">
 The overall mean of lot3 should be 1492.431<mean(lot3)<1499.849. The mean of x is 1498.78, so it falls between the confidence interval.
+
 
 H0: Average is equal to 1500.
 
@@ -199,7 +202,7 @@ H1: Average is not equal to 1500.
 
 If p = 0.04168 > 0.05, statistically H1 is accepted at 95% confidence interval. So the average is not equal to 1500.
 
-#### Analysis 12. Lot1-Lot2 Paired t-test
+#### Analysis 13. Lot1-Lot2 Paired t-test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210941599-57c9fdf9-ece2-426c-9efc-c5da4b0c9c1f.png">
 
 Paired t-test is a technique used to test the significance of the difference between the arithmetic means of two related groups, provided that n>30 or the normality of the distribution.
@@ -209,7 +212,7 @@ H1: There is a statistically significant difference between the means of lot1 an
 
 Since p = 0.6052 > 0.05, Ho is accepted. That is, there is no statistically significant difference between the averages of lot1 and lot2 at the 95% confidence interval. The confidence interval value is -0.9724591 < mean difference< 0.05724591. Mean difference = -0.2 and stays in confidence interval.
 
-#### Analysis 13. Lot1-Lot3 Paired t-test
+#### Analysis 14. Lot1-Lot3 Paired t-test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210941687-d53fa84c-169b-416d-895d-aab82dda3a11.png">
 
 H0: There is no statistically significant difference between the means of lot1 and lot3.
@@ -217,7 +220,7 @@ H1: There is a statistically significant difference between the means of lot1 an
 
 Since p = 0.04347 < 0.05, H1 is accepted. That is, there is a statistically significant difference between the averages of lot1 and lot3 at the 95% confidence interval. The confidence interval value is 0.1177828 < mean difference < 7.6022172. Mean difference = 3.86 and it falls between confidence interval.
 
-#### Analysis 14. Lot2-Lot3 Paired t-test
+#### Analysis 15. Lot2-Lot3 Paired t-test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927926-e992b287-9442-4240-a341-48f64dc80133.png">
 
 H0: There is no statistically significant difference between the means of lot2 and lot3.
@@ -225,7 +228,7 @@ H1: There is a statistically significant difference between the means of lot2 an
 
 Since p = 0.04199 < 0.05, H1 is accepted. That is, there is a statistically significant difference between the averages of lot2 and lot3 at the 95% confidence interval. The confidence interval value is 0.1529772 < mean difference< 7.9670228. Mean difference = 4.06 and it falls between confidence interval.
 
-### Analysis 15. Levene Test
+#### Analysis 16. Levene Test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210940008-402ffab1-0306-420a-a87b-15805d498115.png">
 Another requirement of ANOVA is Homogeneity of Variances. We can test this with the Bartlett Test. In both tests, we need to set up our null (zero) hypothesis as the variances for the observations are homogeneous.
 
@@ -235,7 +238,7 @@ H1: The variances for our observation are not homogeneous.
 p = 2.895e-07 < 0.05, H1 is accepted, so the variances are not homogeneous.
 It is necessary to find out which group constitutes the variance difference between the groups.
 
-#### Analysis 16. One Way ANOVA Test
+#### Analysis 17. One Way ANOVA Test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210927972-94917f71-b847-43af-86c3-18be07a9f642.png">
 This test is applied if there are at least three independent samples or groups.
 
@@ -245,7 +248,7 @@ H1: At least one μ value is different.
 
 Since the F statistical value is 17.94 and the significance level of the corresponding p value is p = 0.014 < 0.05, the average PSI values of each lot are not equal to each other. So at least one is different. Tukey test is applied to find out which one is different.
 
-#### Analysis 17. Tukey Test
+#### Analysis 18. Tukey Test
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/26927158/210928025-ee0755e8-7a15-442b-b34a-6437a6816e0e.png">
 Confidence value for Tukey HSD is 0.05. As a result of the above analysis, the "diff" column provides average differences. The "lwr" and "upr" columns provide lower and upper 95% security limits, respectively. Finally, the “p adj” column provides the adjusted p-values for the number of comparisons made. It turns out that this difference is due to lot3.
 
